@@ -1,11 +1,10 @@
 package:
   name: ecos
-  version: !!str 1.1.0
+  version: !!str 1.1.1_m1
 
 source:
-  fn: ecos-1.1.0.tar.gz
-  url: https://pypi.python.org/packages/source/e/ecos/ecos-1.1.0.tar.gz
-  md5: f613c75198996093db5f894ad3f64385
+  git_url: git@github.com:embotech/ecos-python.git
+  git_branch: develop
 
 requirements:
   build:

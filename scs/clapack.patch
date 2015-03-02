@@ -1,10 +1,10 @@
-diff -rupN setup.py setup.py
---- setup.py
-+++ setup.py
-@@ -6,6 +6,15 @@ from platform import system
+diff -rupN python/setup.py python/setup.py
+--- python/setup.py
++++ python/setup.py
+@@ -7,6 +7,14 @@ from platform import system
  from numpy import get_include
  from numpy.distutils.system_info import get_info, BlasNotFoundError 
-
+ 
 +def get_info(x):
 +    import os
 +    return {
@@ -13,7 +13,6 @@ diff -rupN setup.py setup.py
 +        'libraries': os.environ.get('LAPACK_LIBS', '').split(),
 +    }
 +
-+
- def install_scs(USE_LAPACK, USE_64_BIT_BLAS, BLAS_STR, LAPACK_STR, USE_OPENMP, rootDir): 
+ def install_scs(USE_64_BIT_BLAS, blas_info, lapack_info, USE_OPENMP, rootDir): 
      libraries = []
      if system() == 'Linux':
