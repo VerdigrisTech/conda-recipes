@@ -3,8 +3,8 @@ package:
   version: !!str 1.1.1_m1
 
 source:
-  git_url: git@github.com:embotech/ecos-python.git
-  git_branch: develop
+  git_url: git@github.com:jwkvam/ecos-python.git
+  git_branch: master
 
 requirements:
   build:
